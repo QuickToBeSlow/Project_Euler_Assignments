@@ -10,8 +10,9 @@ body {
   background-size: 20px 20px;
 }
 #green_cusp {
-  
+  width: 100%;
+  background-color: "rgb(196, 220, 128)";
 }
 #profile {
-  
+  width: 500px;
 }
