@@ -11,12 +11,24 @@
       </section>
       <section style="float: right;">
         <div id="profile">
+          <table id="progress">
+            
+          </table>
           <!-- <div id="green_cusp">
           
           </div> -->
         </div>
       </section>
     </div>
+    <script>
+      for (let i=0; i<10; i++) {
+        let row = document.getElementById("progress").createElement("TR");
+        for (let j=0; j<10; j++) {
+          let col = row.createElement("TD");
+          col.innerHTML=(i+1)*(j+1);
+        }
+      }
+    </script>
   </body>
 
 </html>
