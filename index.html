@@ -22,9 +22,9 @@
     </div>
     <script>
       for (let i=0; i<10; i++) {
-        let row = document.getElementById("progress").createElement("TR");
+        let row = document.getElementById("progress").appendChild(document.createElement("TR"));
         for (let j=0; j<10; j++) {
-          let col = row.createElement("TD");
+          let col = row.appendChild(document.createElement("TD"));
           col.innerHTML=(i+1)*(j+1);
         }
       }
