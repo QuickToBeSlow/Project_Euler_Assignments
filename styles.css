@@ -35,6 +35,10 @@ section {
   height: 100%;
 }
 
+#main_container {
+  width: 800px;
+}
+
 #download_container {
   display: block;
   margin-top: 100px;
