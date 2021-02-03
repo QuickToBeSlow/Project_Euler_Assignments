@@ -57,3 +57,13 @@ section {
   float: left;
   line-height: 21px;
 }
+
+.problems_solved_grid td {
+  width: 23px;
+  height: 21px;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 85%;
+  padding: 2px;
+  border: 1px solid;
+}

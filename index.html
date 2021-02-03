@@ -11,7 +11,7 @@
       </section>
       <section style="float: right;">
         <div id="profile">
-          <table id="progress">
+          <table id="progress" class="problems_solved_grid">
             
           </table>
           <!-- <div id="green_cusp">
@@ -21,11 +21,17 @@
       </section>
     </div>
     <script>
+      var solved_problems = [1, 2, 6, 14];
+      var loc = 0;
       for (let i=0; i<10; i++) {
         let row = document.getElementById("progress").appendChild(document.createElement("TR"));
         for (let j=0; j<10; j++) {
           let col = row.appendChild(document.createElement("TD"));
-          col.innerHTML=(i+1)*(j+1);
+          col.innerHTML=(i*10)+j+1;
+          if (solved_problems[loc] == (i*10)+j+1) {
+            col.style.backgroundColor="rgb(255, 172, 0)";
+            loc++;
+          }
         }
       }
     </script>
